@@ -1,7 +1,25 @@
 {% extends 'base.html.twig' %}
 {% block title %}Home Page{% endblock %}
  {% block body %}
-{% include '/App/_nav/navbar.html.twig' %}
-    <h1>Homepage</h1>
+    <section class="header">
+        <video class="col-12" muted loop autoplay poster="{{ asset('/img/banniere.png') }}" id="trailer">
+            <source src="{{ asset('/video/local_trailer.mp4') }}" type="video/mp4">
+        </video>
+    </section>
+     {% include '/App/_nav/navbar.html.twig' %}
+
+     <div class="container">
+         <div class="row">
+             <p class="description">
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci autem doloremque enim impedit ipsum nam nostrum, quo veritatis? Delectus doloremque fugit quod. Aliquid nisi odio quibusdam rerum suscipit totam.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, commodi consequatur deserunt et illum libero magnam nemo, nulla omnis porro repellat repellendus similique veritatis voluptas? Ea incidunt pariatur sint?
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci autem doloremque enim impedit ipsum nam nostrum, quo veritatis? Delectus doloremque fugit quod. Aliquid nisi odio quibusdam rerum suscipit totam.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, commodi consequatur deserunt et illum libero magnam nemo, nulla omnis porro repellat repellendus similique veritatis voluptas? Ea incidunt pariatur sint?
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci autem doloremque enim impedit ipsum nam nostrum, quo veritatis? Delectus doloremque fugit quod. Aliquid nisi odio quibusdam rerum suscipit totam.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, commodi consequatur deserunt et illum libero magnam nemo, nulla omnis porro repellat repellendus similique veritatis voluptas? Ea incidunt pariatur sint?
+
+             </p>
+         </div>
+     </div>
 
  {% endblock %}

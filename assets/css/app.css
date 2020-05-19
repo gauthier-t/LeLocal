@@ -5,7 +5,12 @@
 
 /*--------NAVBAR--------*/
 
-.navbar { background: #732030 !important; }
+.navbar {
+    background: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .navbar .logo { height: 115px; }
 .navbar-light .navbar-brand { margin-left: 60px; }
 .navbar-nav {
@@ -14,15 +19,34 @@
 }
 li.nav-item{  margin-right: 30px; }
 .navbar-light .navbar-nav .nav-link {
-    color: #FFFFFF;
+    color: #000000;
     font-family: 'Teko', Sans-Serif, sans-serif;
     font-size: 30px;
     font-weight: 500;
 }
 
+/*--------HOME PAGE--------*/
+section.header {
+    height: 100vh;
+    overflow: hidden;
+}
+video#trailer {
+    bottom: 0;
+    height: auto;
+    min-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    right: 0;
+    width: auto;
+    z-index: -100;
+}
+
 
 
 /*--------MEDIA QUERIES--------*/
+@media screen and (max-width: 1680px) {
+    section.header { height: auto; }
+}
 @media screen and (max-width: 1330px){
     .navbar .logo { height: 95px; }
     .navbar-light .navbar-brand { margin-left: 10px; }
