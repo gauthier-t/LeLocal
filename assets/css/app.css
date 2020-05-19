@@ -1,0 +1,45 @@
+/*--------IMPORT--------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+/*--------NAVBAR--------*/
+
+.navbar { background: #732030 !important; }
+.navbar .logo { height: 115px; }
+.navbar-light .navbar-brand { margin-left: 60px; }
+.navbar-nav {
+    position: absolute;
+    right: 10%;
+}
+li.nav-item{  margin-right: 30px; }
+.navbar-light .navbar-nav .nav-link {
+    color: #FFFFFF;
+    font-family: 'Teko', Sans-Serif, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+/*--------MEDIA QUERIES--------*/
+@media screen and (max-width: 1330px){
+    .navbar .logo { height: 95px; }
+    .navbar-light .navbar-brand { margin-left: 10px; }
+    .navbar-nav { right: 5%; }
+    li.nav-item { margin-right: 20px; }
+    .navbar-light .navbar-nav .nav-link { font-size: 25px; }
+
+}
+@media screen and (max-width: 991px) {
+    .navbar-light .navbar-brand{
+        margin: 0 auto;
+        position: relative;
+    }
+    .dropdown-menu.show, .dropdown-item { display: inline-block; }
+    .navbar-nav {
+        position: initial;
+        right: initial;
+    }
+    li.nav-item { margin-right: initial; }
+}

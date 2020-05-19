@@ -4,7 +4,13 @@
 
      <h1>Admin Homepage</h1>
      <p>
-         {{ home.description | nl2br }}
+         {{ description.description | raw }}
      </p>
+     <a href="{{ path('app.description.edit', { id: description.id }) }}"> Éditer</a>
+     {% for team in team  %}
+         <p>
+             {{ team.description }}
+         </p>
+     {% endfor %}
 
  {% endblock %}
